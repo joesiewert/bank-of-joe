@@ -1,1 +1,1 @@
-web: bankofjoe
+web: bank-of-joe
