@@ -19,8 +19,23 @@
 			"Rev": "f931d1ea80ae95a6fc739213cdd9399bd2967fb6"
 		},
 		{
+			"ImportPath": "github.com/go-gorp/gorp",
+			"Comment": "v1.7-200-g88f3ff2",
+			"Rev": "88f3ff2c0d5eb7b20af1b6b4d2051d7ddfffadb0"
+		},
+		{
 			"ImportPath": "github.com/golang/protobuf/proto",
 			"Rev": "874264fbbb43f4d91e999fecb4b40143ed611400"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "go1.0-cutoff-107-g4dd446e",
+			"Rev": "4dd446efc17690bc53e154025146f73203b18309"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/oid",
+			"Comment": "go1.0-cutoff-107-g4dd446e",
+			"Rev": "4dd446efc17690bc53e154025146f73203b18309"
 		},
 		{
 			"ImportPath": "github.com/manucorporat/sse",
