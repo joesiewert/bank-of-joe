@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"net/http"
 	"log"
 	"os"
 	"strconv"
@@ -22,14 +23,14 @@ type Account struct {
 }
 
 func index(c *gin.Context) {
-	content := gin.H{"Hello": "World"}
-	c.JSON(200, content)
+	c.HTML(http.StatusOK, "index.html", nil)
 }
 
 var dbmap = initDb()
 
 func main() {
 	router := gin.Default()
+	router.LoadHTMLGlob("public/*.html")
 	router.GET("/", index)
 	v1 := router.Group("api/v1")
 	{
