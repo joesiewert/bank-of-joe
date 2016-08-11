@@ -2,8 +2,8 @@ package main
 
 import (
 	"database/sql"
-	"net/http"
 	"log"
+	"net/http"
 	"os"
 	"strconv"
 	"time"
@@ -76,7 +76,6 @@ func GetAccounts(c *gin.Context) {
 func GetAccount(c *gin.Context) {
 	id := c.Params.ByName("id")
 	var account Account
-	// err := dbmap.Get(Account{}, id)
 	err := dbmap.SelectOne(&account, "select * from accounts where id=$1", id)
 
 	if err == nil {
